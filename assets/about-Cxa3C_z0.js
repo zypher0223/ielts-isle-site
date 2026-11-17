@@ -1,4 +1,4 @@
-import{e as o}from"./ext-index-DX9_sUWZ.js";import{s as t}from"./samples-DVmAcWgk.js";function b(i){const a=t.filter(e=>!e.ai),n=t.filter(e=>e.ai),r=e=>o.filter(l=>l.source===e).map(l=>l.name).join("、");i.innerHTML=`<div class="head"><div><h1>内容来源</h1><p>网站里每一类内容来自哪里、用的什么协议</p></div></div>
+import{e as o}from"./ext-index-DX9_sUWZ.js";import{s as t}from"./samples-CKZUafZI.js";function b(i){const a=t.filter(e=>!e.ai),n=t.filter(e=>e.ai),r=e=>o.filter(l=>l.source===e).map(l=>l.name).join("、");i.innerHTML=`<div class="head"><div><h1>内容来源</h1><p>网站里每一类内容来自哪里、用的什么协议</p></div></div>
   <div class="card about" style="max-width:820px">
     <h2 style="margin-top:0">学习笔记</h2>
     <p>词汇、同义替换、搭配、语法、各科方法和评分标准来自本站的雅思学习内容笔记。搭配例句里标「自写」的是笔记作者写的，其余逐字照录自笔记列出的参考网站。</p>
