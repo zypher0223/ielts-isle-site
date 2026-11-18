@@ -1,4 +1,4 @@
-import{e as o}from"./ext-index-DX9_sUWZ.js";import{s as r}from"./samples-CKZUafZI.js";function b(t){const a=r.filter(e=>!e.ai),n=r.filter(e=>e.ai),l=e=>o.filter(i=>i.source===e).map(i=>i.name).join("、");t.innerHTML=`<div class="head"><div><h1>内容来源</h1><p>网站里每一类内容来自哪里、用的什么协议</p></div></div>
+import{e as o}from"./ext-index-DX9_sUWZ.js";import{s as r}from"./samples-CKZUafZI.js";function s(t){const a=r.filter(e=>!e.ai),n=r.filter(e=>e.ai),l=e=>o.filter(i=>i.source===e).map(i=>i.name).join("、");t.innerHTML=`<div class="head"><div><h1>内容来源</h1><p>网站里每一类内容来自哪里、用的什么协议</p></div></div>
   <div class="card about" style="max-width:820px">
     <h2 style="margin-top:0">学习笔记</h2>
     <p>词汇、同义替换、搭配、语法、各科方法和评分标准来自本站的雅思学习内容笔记。搭配例句里标「自写」的是笔记作者写的，其余逐字照录自笔记列出的参考网站。</p>
@@ -6,6 +6,12 @@ import{e as o}from"./ext-index-DX9_sUWZ.js";import{s as r}from"./samples-CKZUafZ
     <ul>
       <li><b>官方考官评分样本 ${a.length} 篇</b>：来自 IELTS.org、剑桥雅思真题（Cambridge IELTS 18–21）和 Official IELTS Practice Materials，经 ieltswritingchecker.org 转载。每篇都写明了来源网址和评分人，已获使用授权。</li>
       <li><b>AI 范文 ${n.length} 篇</b>：找不到对应题型和分数的官方样本时，由 Claude Opus 5.5（Anthropic）按雅思公开评分标准编写，不是考官评分，每篇都有标注。</li>
+    </ul>
+    <h2>机经（考生考后回忆）</h2>
+    <ul>
+      <li>口语本季题库、写作题目、听力场景和阅读篇名来自项目作者提供的《雅思机经整理（2026 年）》，是考生考后凭记忆整理的题目，<b>不是雅思官方原题</b>，措辞和细节可能不准确。</li>
+      <li>写作题按考生报告日期区分「近期考过」和「可靠性较低」；小作文只有文字题干，没有原图。</li>
+      <li>听力和阅读只列场景和篇名，不收考生回忆的答案。</li>
     </ul>
     <h2>外部词库和文章</h2>
     <ul>
@@ -22,4 +28,4 @@ import{e as o}from"./ext-index-DX9_sUWZ.js";import{s as r}from"./samples-CKZUafZ
       <li><b>模拟听力 5 套</b>：脚本和题目由 AI 编写（Claude Opus 5.5，Anthropic），录音用 macOS 系统自带的朗读声音生成，不是真人录音。今日页的 Section 1 对话也是本站编写的练习材料。</li>
       <li><b>阅读练习短文和语法练习题</b>：本站编写（Claude Opus 5.5），不是剑桥真题。</li>
     </ul>
-  </div>`}export{b as renderAbout};
+  </div>`}export{s as renderAbout};
