@@ -1,0 +1,3 @@
+import o from"./jijing-BflA8ygL.js";const i=o,e=s=>String(s??"").replace(/[&<>"]/g,t=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"})[t]);function r(s){if(!i)return"";const t=i[s];if(!t.length)return"";const a=s==="listening"?"只列考生回忆的场景，不收回忆答案：雅思会重复使用题目，背答案没有用，还可能记错。看到场景后，用本站的模拟听力和官方样题练同类题型，顺便积累这个场景的词汇。":"只列考生回忆的篇名和话题，不收原文和答案。可以先查这些话题的背景和常用词，正式练习仍然用官方样题和剑桥真题。";return`<h2>近期考试话题（机经）</h2>
+    <p class="note">考生考后回忆整理，不是官方原题，可能不准确；截至 2026 年 ${e(i.asOf)}。${a}</p>
+    <div class="list">${t.map(n=>`<div class="it jj-week"><b>${e(n.when)}</b><div class="jj-items">${n.items.map(c=>`<span class="chip">${e(c)}</span>`).join("")}</div></div>`).join("")}</div>`}export{r};
