@@ -1,0 +1,16 @@
+{
+  "name": "语屿 · 雅思",
+  "short_name": "语屿雅思",
+  "description": "零基础起步，目标雅思 6 分或 7 分的自学网站",
+  "lang": "zh-CN",
+  "start_url": "./#/today",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3f5fa",
+  "theme_color": "#161a2b",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
