@@ -1,10 +1,16 @@
 // 离线缓存：网页外壳、程序、数据和外部词库，访问过就存下来，没网也能打开。
 // 单词录音（audio/）是分段播放的，浏览器用分段请求，这里不缓存，没网时听不了录音。
-const CACHE = 'ielts-isle-v1';
+const CACHE = 'ielts-isle-mwlivb9q';
 const SHELL = ['./', './index.html', './manifest.webmanifest', './logo.svg', './icon-192.png', './icon-512.png'];
 
 self.addEventListener('install', (e) => {
-  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting()));
+  e.waitUntil((async () => {
+    const c = await caches.open(CACHE);
+    await c.addAll(SHELL);
+    // 打包清单里的全部程序和样式（各页面的分包）
+    try { const list = await (await fetch('./precache.json', { cache: 'no-store' })).json(); await c.addAll(list.map((f) => './' + f)); } catch { /* 清单拿不到就按访问缓存 */ }
+    await self.skipWaiting();
+  })());
 });
 self.addEventListener('activate', (e) => {
   e.waitUntil(caches.keys().then((keys) => Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k)))).then(() => self.clients.claim()));
