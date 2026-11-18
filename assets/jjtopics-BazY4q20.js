@@ -1,0 +1,4 @@
+import{j as p}from"./jijing-CTMYmEsk.js";const a=p,e=t=>String(t??"").replace(/[&<>"]/g,s=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"})[s]),n=t=>`<div class="it jj-week"><b>${e(t.when)}</b><div class="jj-items">${t.items.map(s=>`<span class="chip">${e(s)}</span>`).join("")}</div></div>`;function c(t){if(!a)return"";const s=a[t];if(!s.length)return"";const l=t==="listening"?"只列考生回忆的场景，不收回忆答案：雅思会重复使用题目，背答案没有用，还可能记错。看到场景后，用本站的模拟听力和官方样题练同类题型，顺便积累这个场景的词汇。":"只列考生回忆的篇名和话题，不收原文和答案。可以先查这些话题的背景和常用词，正式练习仍然用官方样题和剑桥真题。";return`<h2>近期考试话题（机经）</h2>
+    <p class="note">考生考后回忆整理，不是官方原题，可能不准确；截至 2026 年 ${e(a.asOf)}。${l}</p>
+    <div class="list">${s.filter(i=>!i.past).map(n).join("")}</div>
+    ${s.some(i=>i.past)?`<details class="jj-past"><summary>往季：2026 年 1–8 月（${s.filter(i=>i.past).length} 场）</summary><div class="list">${s.filter(i=>i.past).map(n).join("")}</div></details>`:""}`}export{c as r};
