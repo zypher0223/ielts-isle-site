@@ -1,6 +1,6 @@
 // 离线缓存：网页外壳、程序、数据和外部词库，访问过就存下来，没网也能打开。
 // 单词录音（audio/）是分段播放的，浏览器用分段请求，这里不缓存，没网时听不了录音。
-const CACHE = 'ielts-isle-mwngp3ru';
+const CACHE = 'ielts-isle-mwnh7cbi';
 const SHELL = ['./', './index.html', './manifest.webmanifest', './logo.svg', './icon-192.png', './icon-512.png'];
 
 self.addEventListener('install', (e) => {
