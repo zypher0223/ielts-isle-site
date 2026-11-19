@@ -1,4 +1,4 @@
-import{g as m,s as x,a as y,b as k,t as E,c as S,m as q}from"./index-DIJWXT3o.js";import{i as l,b as w,P as D,a as H}from"./plan-D3-W-c2A.js";import"./notewords-CQ2JVoI4.js";import"./data-z3W7qv_E.js";const d=e=>e.replace(/[&<>"]/g,i=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"})[i]);function L(e){const i=m(),u=new Date,c=x();e.innerHTML=`
+import{g as m,s as x,a as y,b as k,t as E,c as S,m as q}from"./index-VcXqZGOl.js";import{i as l,b as w,P as D,a as H}from"./plan-Bm4Yguf8.js";import"./notewords-DeH2xjXR.js";import"./data-z3W7qv_E.js";const d=e=>e.replace(/[&<>"]/g,i=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"})[i]);function L(e){const i=m(),u=new Date,c=x();e.innerHTML=`
   <div class="head">
     <div><h1>今日</h1><p>${u.getMonth()+1} 月 ${u.getDate()} 日，零基础起步，目标 ${i} 分${c>1?`，已连续学习 ${c} 天`:""}</p></div>
     <div class="seg" role="group" aria-label="目标分数"><button data-band="6" class="${i===6?"on":""}">目标 6 分</button><button data-band="7" class="${i===7?"on":""}">目标 7 分</button></div>
