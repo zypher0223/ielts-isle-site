@@ -1,4 +1,4 @@
-import{w as d,g as i,j as r,b as l,k as p,M as u,N as b,O as v}from"./index-CNsYRchp.js";function n(t){const s=d();t.innerHTML=`<div class="head"><div><h1>设置和备份</h1><p>学习记录只存在这个浏览器里。换设备或清理浏览器前，先导出备份</p></div></div>
+import{w as d,g as i,j as r,b as l,k as p,M as u,N as b,O as v}from"./index-0eVbEwlX.js";function n(t){const s=d();t.innerHTML=`<div class="head"><div><h1>设置和备份</h1><p>学习记录只存在这个浏览器里。换设备或清理浏览器前，先导出备份</p></div></div>
   <div class="card" style="max-width:720px">
     <h2 style="margin-top:0">目标分和发音</h2>
     <div style="display:flex;gap:12px;flex-wrap:wrap">
