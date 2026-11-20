@@ -1,0 +1,1 @@
+function r(e){return e.toLowerCase().replace(/[£$,]/g,"").replace(/[^a-z0-9.' ]+/g," ").replace(/\s+/g," ").trim()}function n(e){return r(e.replace(/\s*:\s*/g,"."))}function a(e){return e.toLowerCase().replace(/[^a-z0-9 ]+/g," ").replace(/\s+/g," ").trim()}function o(e){return e.toLowerCase().replace(/[^a-z ]+/g," ").replace(/\s+/g," ").trim()}export{a,o as b,r as c,n};
